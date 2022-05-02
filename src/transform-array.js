@@ -14,21 +14,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function transform(/* arr */) {
-  let res = arr.slice();
-
-
-  arr.forEach((el, ind) => {
-    switch (el) {
-      case '--discard-next':
-        if (ind < res.length - 1) {
-          res[ind + 1] = null;
-          res[ind] = null;
-        } else {
-          res[ind] = null;
-        }
-        break;
-    }
-  }
+  throw new NotImplementedError('Not implemented');
+  // remove line with error and write your code here
 }
 
 module.exports = {
